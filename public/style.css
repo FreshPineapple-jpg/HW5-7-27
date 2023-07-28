@@ -1,0 +1,79 @@
+/* style.css */
+body {
+  display: grid;
+  grid-template-areas:
+    "a a a"
+    "b c d"
+    "e e e";
+  grid-template-rows: auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  background: linear-gradient(45deg, #FFC0CB, #FFA07A, #FFD700, #ADFF2F, #00FF7F);
+  min-height: 100vh;
+}
+
+/* Box A */
+.title {
+  grid-area: a;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 40px; /* Change the font size as needed */
+}
+
+/* Box B */
+form {
+  grid-area: b;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Box C */
+.replaceQuote {
+  grid-area: c;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Box D */
+.removeQuote {
+  grid-area: d;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Box E */
+.quoteList {
+  grid-area: e;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  margin: 0;
+  padding-left: 10px;
+}
+
+/* Additional styles for buttons */
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
